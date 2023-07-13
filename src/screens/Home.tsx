@@ -11,6 +11,7 @@ import Male from "../components/card/male";
 
 const Home = () => {
   const [gender, setGender] = useState("");
+  const [height, setHeight] = useState(0);
   const handleSubmit = () => {
     console.log("hello");
   };
@@ -41,12 +42,15 @@ const Home = () => {
         <Text className="text-2xl text-white">
           HEIGHT<Text className="text-sm">cm</Text>
         </Text>
+        <Text className="text-xl text-white">{height.toFixed(1)}</Text>
         <Slider
+          thumbTintColor="#FF0000"
           style={{ width: 200, height: 40, marginBottom: 20 }}
-          minimumValue={0}
-          maximumValue={1}
-          minimumTrackTintColor="#FF0000"
-          maximumTrackTintColor="#000000"
+          minimumValue={1}
+          maximumValue={500}
+          onValueChange={(value) => setHeight(value)}
+          minimumTrackTintColor="#FFF"
+          maximumTrackTintColor="#FFF"
         />
       </View>
 
