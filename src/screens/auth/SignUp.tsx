@@ -27,6 +27,9 @@ const SignUp = ({ navigation }: any) => {
 
     navigation.navigate("Home");
   };
+  const navigateToLogin = () => {
+    navigation.navigate("SignIn");
+  };
   const [fontsLoaded] = useFonts({
     Manrope: require("../../../assets/fonts/Manrope/static/Manrope-Bold.ttf"),
   });
@@ -103,7 +106,7 @@ const SignUp = ({ navigation }: any) => {
                     alignItems: "center",
                     marginLeft: 10,
                   }}
-                  keyboardType="number-pad"
+                  keyboardType="default"
                 />
               </View>
             </View>
@@ -130,7 +133,7 @@ const SignUp = ({ navigation }: any) => {
                     alignItems: "center",
                     marginLeft: 10,
                   }}
-                  keyboardType="number-pad"
+                  keyboardType="default"
                 />
               </View>
             </View>
@@ -159,7 +162,7 @@ const SignUp = ({ navigation }: any) => {
                     alignItems: "center",
                     marginLeft: 10,
                   }}
-                  keyboardType="number-pad"
+                  keyboardType="default"
                 />
               </View>
             </View>
@@ -217,12 +220,7 @@ const SignUp = ({ navigation }: any) => {
             >
               Already have an account?
             </Text>
-            <TouchableOpacity
-              onPress={() => {
-                console.log(" I have been hit");
-                navigation.navigate("SignIn");
-              }}
-            >
+            <TouchableOpacity onPress={navigateToLogin}>
               <Text
                 style={{
                   color: "#2465C2",
