@@ -10,10 +10,9 @@ function calculateBMI(
   height: number
 ): BMIResult {
   // Convert height from centimeters to meters
-  const heightInMeters: number = height / 100;
 
   // Calculate BMI
-  const bmi: number = weight / (heightInMeters * heightInMeters);
+  const bmi: number = (weight / height / height) * 10000;
 
   const roundedBMI: number = Number(bmi.toFixed(2));
 

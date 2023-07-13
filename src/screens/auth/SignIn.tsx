@@ -48,8 +48,12 @@ const SignIn = ({ navigation }: any) => {
         >
           <View className="flex gap-y-2">
             <View className="flex  flex-row items-center w-screen">
-              <TouchableOpacity onPress={() => navigation.goBack()}>
-                <View className="absolute" style={{ left: 16, top: -10 }}>
+              <TouchableOpacity
+                style={{ left: 16, top: 1 }}
+                className=" absolute z-10 "
+                onPress={() => navigation.goBack()}
+              >
+                <View className="">
                   <Ionicons
                     className=""
                     name="arrow-back"

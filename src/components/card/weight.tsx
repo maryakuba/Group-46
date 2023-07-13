@@ -1,8 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-const Weight = ({setWeight, weight} : {setWeight : any, weight : number} ) => {
-
+const Weight = ({ setWeight, weight }: { setWeight: any; weight: number }) => {
   const handleIncrease = () => {
     setWeight(weight++);
   };
@@ -13,7 +12,9 @@ const Weight = ({setWeight, weight} : {setWeight : any, weight : number} ) => {
 
   return (
     <View className="h-48 w-36  rounded-lg mx-3 bg-primary  flex pt-6 items-center">
-      <Text className="text-white text-2xl font-medium">WEIGHT</Text>
+      <Text className="text-white text-2xl font-medium">
+        WEIGHT <Text className="text-sm">(kg)</Text>
+      </Text>
       <Text className="text-white text-3xl font-medium pt-6">{weight}</Text>
       <View className="flex pt-6 flex-row gap-x-4">
         <TouchableOpacity onPress={handleDecrease}>
