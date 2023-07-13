@@ -3,15 +3,18 @@ import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
+import { useBMI } from "../services/context";
 
 const Results = ({ navigation }: any) => {
+  const { state, dispatch } = useBMI();
+
   return (
     <>
       <StatusBar style="dark" backgroundColor="#2465C2" />
 
       <SafeAreaView style={styles.container}>
         <View className="flex flex-row items-center w-screen mt-5">
-          <TouchableOpacity onPress={() => navigation.goBack()}>
+          <TouchableOpacity className="" onPress={() => navigation.goBack()}>
             <View className="absolute" style={{ left: 16, top: -10 }}>
               <Ionicons
                 className=""
@@ -29,8 +32,12 @@ const Results = ({ navigation }: any) => {
           </Text>
         </View>
         <View className="flex gap-y-9  items-center mt-16 bg-primary h-96 rounded-2xl mx-14 pt-10 ">
-          <Text className="text-5xl font-medium text-white">NORMAL</Text>
-          <Text className="text-7xl font-medium text-white">19.5</Text>
+          <Text className="text-5xl font-medium text-white">
+            {state.bmi.category}
+          </Text>
+          <Text className="text-7xl font-medium text-white">
+            {state.bmi.bmi}
+          </Text>
           <Text className=" text-white text-center w-1/2">
             Lorem ipsum dolor sit amet consectetur. Sed aliquam sit tempus elit
             sem orci urna fames augue.

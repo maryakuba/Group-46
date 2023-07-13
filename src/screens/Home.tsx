@@ -9,13 +9,23 @@ import Age from "../components/card/age";
 import Female from "../components/card/female";
 import Male from "../components/card/male";
 import { StatusBar } from "expo-status-bar";
+import calculateBMI from "../services/bmi";
+import { useBMI } from "../services/context";
 
 const Home = ({ navigation }: any) => {
   const [gender, setGender] = useState("");
+  let [age, setAge] = useState(0);
+  let [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
+  const { state, dispatch } = useBMI();
+
   const handleSubmit = () => {
+    const results = calculateBMI(gender, weight, age, height);
+    dispatch({ type: "SET_BMI", bmi: results });
+
     navigation.navigate("Results");
   };
+
   return (
     <>
       <StatusBar style="dark" backgroundColor="#2465C2" />
@@ -59,8 +69,8 @@ const Home = ({ navigation }: any) => {
           </View>
 
           <View className="flex flex-row rounded-lg mx-12 pt-10">
-            <Weight />
-            <Age />
+            <Weight weight={weight} setWeight={setWeight} />
+            <Age age={age} setAge={setAge} />
           </View>
 
           <View

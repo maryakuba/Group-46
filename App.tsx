@@ -1,10 +1,13 @@
-import React, {Fragment} from 'react';
-import {AppNavigator} from './src/navigation';
+import React, { Fragment } from "react";
+import { AppNavigator } from "./src/navigation";
+import { BMIProvider } from "./src/services/context";
 
 const App = () => {
   return (
     <Fragment>
-      <AppNavigator />
+      <BMIProvider>
+        <AppNavigator />
+      </BMIProvider>
     </Fragment>
   );
 };

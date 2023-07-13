@@ -1,9 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-const Age = () => {
-  let [age, setAge] = useState(0);
-
+const Age = ({ setAge, age }: { setAge: any; age: number }) => {
   const handleIncrease = () => {
     setAge(age++);
   };

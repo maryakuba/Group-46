@@ -1,8 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-const Weight = () => {
-  let [weight, setWeight] = useState(0);
+const Weight = ({setWeight, weight} : {setWeight : any, weight : number} ) => {
 
   const handleIncrease = () => {
     setWeight(weight++);

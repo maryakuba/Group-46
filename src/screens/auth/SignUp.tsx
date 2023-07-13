@@ -195,7 +195,7 @@ const SignUp = ({ navigation }: any) => {
               onValueChange={setChecked}
               color={isChecked ? "#2465C2" : undefined}
             />
-            <Text>Send me travel tips and promotions by email.</Text>
+            <Text>Send me health tips and promotions by email.</Text>
           </View>
           <View className="flex justify-center items-center pt-5 px-20">
             <Text className="text-center text-lightGray">
