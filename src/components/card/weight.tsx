@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-const Card = () => {
+const Weight = () => {
   let [weight, setWeight] = useState(0);
 
   const handleIncrease = () => {
@@ -32,4 +32,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Weight;

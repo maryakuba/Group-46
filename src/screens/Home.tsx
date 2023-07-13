@@ -1,12 +1,16 @@
 import { View, Text, TouchableOpacity } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Icons from "../components/icons";
 import { Foundation } from "@expo/vector-icons";
 import Slider from "@react-native-community/slider";
-import Card from "../components/card";
+import Weight from "../components/card/weight";
+import Age from "../components/card/age";
+import Female from "../components/card/female";
+import Male from "../components/card/male";
 
 const Home = () => {
+  const [gender, setGender] = useState("");
   const handleSubmit = () => {
     console.log("hello");
   };
@@ -19,20 +23,17 @@ const Home = () => {
       </View>
 
       <View className="flex justify-center flex-row mt-10">
-        <Icons
-          Icon={
-            <Foundation
-              className=""
-              name="female-symbol"
-              size={100}
-              color="#2465C2"
-            />
-          }
-          text="FEMALE"
+        <Female
+          gender={gender}
+          onPress={() => {
+            setGender("female");
+          }}
         />
-        <Icons
-          Icon={<Foundation name="male-symbol" size={100} color="#2465C2" />}
-          text="MALE"
+        <Male
+          gender={gender}
+          onPress={() => {
+            setGender("male");
+          }}
         />
       </View>
 
@@ -50,8 +51,8 @@ const Home = () => {
       </View>
 
       <View className="flex flex-row rounded-lg mx-12 pt-10">
-        <Card />
-        <Card />
+        <Weight />
+        <Age />
       </View>
 
       <View
