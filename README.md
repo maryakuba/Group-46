@@ -111,8 +111,8 @@ The following people contributed to this project with their respective roles:
  The Quiz App is a comprehensive platform that allows users to test their understanding of various
  lessons and measure their intelligence through a scoring system. With features like lesson management,
  multiple question types, scoring calculation, and progress tracking, the app provides users with an engaging
- and rewarding experience. It promotes learning, competition, and self-improvement while offering an intuitive
- user interface and seamless user experience.
+ and rewarding experience. It promotes learning, competition,and self-improvement while offering an intuitive
+ user interface and seamless user experience. 
 
 ```
 
@@ -120,7 +120,7 @@ The following people contributed to this project with their respective roles:
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-Made with :heart: by <a href="https://github.com/Manuel2u" target="_blank">Manuel_Dev</a>
+Made with :heart: by <a href="https://github.com/Manuel2u" target="_blank">Manuel_Dev</a> and <a href="https://github.com/Jayhubexp" target="_blank">Jayhubexp</a> 
 
 &#xa0;
 
