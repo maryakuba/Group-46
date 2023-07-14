@@ -4,7 +4,7 @@ import { BMIProvider } from "./src/services/context";
 
 const App = () => {
   return (
-    <Fragment>
+    <Fragment> 
       <BMIProvider>
         <AppNavigator />
       </BMIProvider>
