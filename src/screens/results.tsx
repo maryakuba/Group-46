@@ -51,7 +51,7 @@ const Results = ({ navigation }: any) => {
                 ? `text-5xl font-medium text-white`
                 : `text-xl font-medium text-white`
             }
-          >
+          > 
             {state.bmi.category}
           </Text>
           <Text className="text-7xl font-medium text-white">
