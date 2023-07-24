@@ -29,5 +29,4 @@ const Age = ({ setAge, age }: { setAge: any; age: number }) => {
     </View>
   );
 };
-
 export default Age;
