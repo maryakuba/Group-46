@@ -14,7 +14,7 @@ import Checkbox from "expo-checkbox";
 
 import { StatusBar } from "expo-status-bar";
 
-//pick country code from text view
+// Pick country code from text view
 
 const SignUp = ({ navigation }: any) => {
   const [fullName, setFullName] = useState("");
@@ -23,8 +23,14 @@ const SignUp = ({ navigation }: any) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isChecked, setChecked] = useState(false);
   const handleSubmit = async () => {
-    /// make request to backedn using axios
-
+    // This code makes request to backend using axios
+  /*const response = await Axios.post("/api/v1/users", {
+  fullName,
+  email,
+  password,
+  confirmPassword,
+  isChecked,
+  }); */
     navigation.navigate("Home");
   };
   const navigateToLogin = () => {
