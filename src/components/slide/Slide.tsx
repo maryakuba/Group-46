@@ -80,7 +80,7 @@ const Slide = ({
 const styles = StyleSheet.create({
   topItems: {
     position: "relative",
-    zIndex: 20,
+    zIndex: 22,
   },
 
   image: {
