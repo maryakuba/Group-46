@@ -15,7 +15,7 @@ function calculateBMI(
   const bmi: number = (weight / height / height) * 10000;
 
   const roundedBMI: number = Number(bmi.toFixed(2));
-
+ 
   // Determine the BMI category based on gender and age
   let category: string;
   if (gender.toLowerCase() === "male") {

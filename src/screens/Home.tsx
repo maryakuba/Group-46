@@ -30,7 +30,7 @@ const Home = ({ navigation }: any) => {
     <>
       <StatusBar style="dark" backgroundColor="#2465C2" />
       <ScrollView>
-        <SafeAreaView className="flex-1">
+        <SafeAreaView  edges={['top']} className="flex-1">
           <View className="flex justify-center items-center mt-4">
             <Text className="text-3xl font-medium text-primary">
               BMI Calculator

@@ -37,7 +37,7 @@ const SignIn = ({ navigation }: any) => {
     <>
       <StatusBar style="dark" backgroundColor="#2465C2" />
 
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView  edges={['top']} style={styles.container}>
         <View
           style={{
             flexDirection: "row",

@@ -8,12 +8,12 @@ const config: ExpoConfig = {
   slug: "BMICalculator",
   extra: {
     eas: {
-      projectId: "50c63429-c96f-4caa-8c06-e93d5aca06b8",
+      projectId: "9b6c9b3e-9467-4ea9-8d3e-7581de077b93",
     },
   },
   owner: "manueldev04",
   updates: {
-    url: "https://u.expo.dev/50c63429-c96f-4caa-8c06-e93d5aca06b8",
+    url: "https://u.expo.dev/9b6c9b3e-9467-4ea9-8d3e-7581de077b93",
   },
   runtimeVersion: {
     policy: "sdkVersion",
