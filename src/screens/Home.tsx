@@ -68,6 +68,7 @@ const Home = ({ navigation }: any) => {
               maximumTrackTintColor="#FFF"
             />
           </View>
+          
 
           <View className="flex flex-row rounded-lg mx-12 pt-10">
             <Weight weight={weight} setWeight={setWeight} />
