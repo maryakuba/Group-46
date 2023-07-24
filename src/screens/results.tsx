@@ -8,6 +8,7 @@ import { useBMI } from "../services/context";
 const Results = ({ navigation }: any) => {
   const { state, dispatch } = useBMI();
   const [leghtExceeded, setLengthExceeded] = useState(false);
+  
 
   const category = state.bmi.category;
   console.log(category.length);
@@ -18,6 +19,7 @@ const Results = ({ navigation }: any) => {
     }
   }, []);
   return (
+    
     <>
       <StatusBar style="dark" backgroundColor="#2465C2" />
 

@@ -18,10 +18,26 @@ const Home = ({ navigation }: any) => {
   let [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const { state, dispatch } = useBMI();
+  const [bmiResult, setBMIResult] = useState(0);
 
-  const handleSubmit = () => {
-    const results = calculateBMI(gender, weight, age, height);
-    dispatch({ type: "SET_BMI", bmi: results });
+
+ const handleSubmit = () => {
+  // Calculate BMI
+  const results = calculateBMI(gender, weight, age, height);
+
+  // Set the calculated BMI result in the state
+  setBMIResult(results);
+
+  // Create an object to store the BMI data
+  const bmiData = {
+    gender: gender,
+    weight: weight,
+    age: age,
+    height: height,
+    bmi: results,
+  };
+
+ dispatch({ type: "SET_BMI", bmi: results });
 
     navigation.navigate("Results");
   };
@@ -67,6 +83,7 @@ const Home = ({ navigation }: any) => {
               maximumTrackTintColor="#FFF"
             />
           </View>
+          
 
           <View className="flex flex-row rounded-lg mx-12 pt-10">
             <Weight weight={weight} setWeight={setWeight} />
