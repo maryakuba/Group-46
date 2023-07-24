@@ -104,6 +104,7 @@ The following people contributed to this project with their respective roles:
 - Jayhubexp => 10964497 (Back-End Developer)
 - GeekYbruce => 10980887 (Back-End Developer)
 - Peter-DevX => 109571609 (Back-End Developer)
+- isaac10965824 => 10965824 (Back-End Developer)
 
 ## :triangular_flag_on_post: Conclusion
 
