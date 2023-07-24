@@ -12,7 +12,10 @@ import { StatusBar } from "expo-status-bar";
 import calculateBMI from "../services/bmi";
 import { useBMI } from "../services/context";
 
+
+// This code defines the `Home` component.
 const Home = ({ navigation }: any) => {
+  // This code declares the `gender`, `age`, `weight`, `height`, and `bmiResult` state variables.
   const [gender, setGender] = useState("");
   let [age, setAge] = useState(0);
   let [weight, setWeight] = useState(0);
