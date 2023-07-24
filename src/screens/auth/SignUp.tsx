@@ -24,13 +24,24 @@ const SignUp = ({ navigation }: any) => {
   const [isChecked, setChecked] = useState(false);
   const handleSubmit = async () => {
     // This code makes request to backend using axios
-  /*const response = await Axios.post("/api/v1/users", {
+  /* const response = await Axios.post("/api/v1/users", {
   fullName,
   email,
   password,
   confirmPassword,
   isChecked,
   }); */
+
+    // This code checks the response status code.
+    /* if (response.status === 200) {
+      // The user was successfully created.
+      navigation.navigate("Home");
+    } else {
+      // There was an error creating the user.
+      console.log(response.data);
+    }
+  }; */
+    
     navigation.navigate("Home");
   };
   const navigateToLogin = () => {
