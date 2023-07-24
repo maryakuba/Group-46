@@ -19,6 +19,7 @@ const Results = ({ navigation }: any) => {
     }
   }, []);
   return (
+    
     <>
       <StatusBar style="dark" backgroundColor="#2465C2" />
 
