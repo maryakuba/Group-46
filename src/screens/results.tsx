@@ -5,12 +5,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import { useBMI } from "../services/context";
 
+// This code defines the `Results` component
 const Results = ({ navigation }: any) => {
   const { state, dispatch } = useBMI();
   const [leghtExceeded, setLengthExceeded] = useState(false);
   
 
   const category = state.bmi.category;
+  // This code calls the `console.log` function to log the length of the `category` state variable
   console.log(category.length);
 
   useEffect(() => {
