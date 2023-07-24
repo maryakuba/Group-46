@@ -18,6 +18,7 @@ const Home = ({ navigation }: any) => {
   let [weight, setWeight] = useState(0);
   const [height, setHeight] = useState(0);
   const { state, dispatch } = useBMI();
+  
 
   const handleSubmit = () => {
     const results = calculateBMI(gender, weight, age, height);
